@@ -8,9 +8,8 @@ export const rideTicketHolders = () => {
     `
 }
 
-eventHub.addEventListener("rideTicketClicked", customEvent => {
-    rideTicketHolders()
-})
+
+eventHub.addEventListener("rideTicketClicked", rideTicketHolders)
 
 
 export const ridePackage = () => {
@@ -18,5 +17,4 @@ export const ridePackage = () => {
     contentTarget.innerHTML += `
     <div class="person bigSpender">
     </div>
-    `
-}
+    `}
