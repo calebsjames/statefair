@@ -1,14 +1,14 @@
-import { foodTicketHolders } from "../food/FoodTicketHolder.js"
-import { gameTicketHolders } from "../games/GameTicketHolder.js"
-import { rideTicketHolders } from "../rides/RideTicketHolder.js"
-import { sideshowTicketHolders } from "../sideshows/SideshowTicketHolder.js"
+import { foodPackage } from "../food/FoodTicketHolder.js"
+import { gamePackage } from "../games/GameTicketHolder.js"
+import { ridePackage } from "../rides/RideTicketHolder.js"
+import { sideshowPackage } from "../sideshows/SideshowTicketHolder.js"
 
-
+const eventHub = document.querySelector("#state-fair")
     
 eventHub.addEventListener("fullPackageTicketClicked", customEvent => {
     
-    foodTicketHolders()
-    gameTicketHolders()
-    rideTicketHolders()
-    sideshowTicketHolders()
+    foodPackage()
+    gamePackage()
+    ridePackage()
+    sideshowPackage()
 })

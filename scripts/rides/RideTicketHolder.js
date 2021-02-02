@@ -13,3 +13,10 @@ eventHub.addEventListener("rideTicketClicked", customEvent => {
 })
 
 
+export const ridePackage = () => {
+    const contentTarget = document.querySelector(".peopleRides")
+    contentTarget.innerHTML += `
+    <div class="person bigSpender">
+    </div>
+    `
+}

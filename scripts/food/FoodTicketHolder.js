@@ -11,3 +11,11 @@ export const foodTicketHolders = () => {
 eventHub.addEventListener("foodTicketClicked", customEvent => {
     foodTicketHolders()
 })
+
+export const foodPackage = () => {
+    const contentTarget = document.querySelector(".peopleFood")
+    contentTarget.innerHTML += `
+    <div class="person bigSpender">
+    </div>
+    `    
+}
