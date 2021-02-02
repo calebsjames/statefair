@@ -11,3 +11,11 @@ export const gameTicketHolders = () => {
 eventHub.addEventListener("gameTicketClicked", customEvent => {
     gameTicketHolders()
 })
+
+export const gamePackage = () => {
+    const contentTarget = document.querySelector(".peopleGames")
+    contentTarget.innerHTML += `
+    <div class="person bigSpender">
+    </div>
+    `
+}

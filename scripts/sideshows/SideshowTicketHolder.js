@@ -11,3 +11,12 @@ export const sideshowTicketHolders = () => {
 eventHub.addEventListener("sideshowTicketClicked", customEvent => {
     sideshowTicketHolders()
 })
+
+
+export const sideshowPackage = () => {
+    const contentTarget = document.querySelector(".peopleSideshow")
+    contentTarget.innerHTML += `
+    <div class="person bigSpender">
+    </div>
+    `
+}
